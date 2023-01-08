@@ -1,0 +1,36 @@
+---
+import ContactIcons from "./ContactIcons.astro";
+---
+
+<div class="mx-auto flex flex-grow justify-center flex-col max-w-2xl">
+    <!-- avatar -->
+    <a class="flex-start block mb-5 h-24 w-24 origin-left" href="/">
+        <img
+            alt="Jan Friebe"
+            src="/assets/img/avatar.png"
+            width="512"
+            height="512"
+            class="rounded-full bg-zinc-800 object-cover h-24 w-24"
+        />
+    </a>
+
+    <!-- headline -->
+    <div class="max-w-2xl">
+        <h1
+            class="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600 font-bold md:text-5xl"
+        >
+            Software developer, hobby boxer and drawer.
+        </h1>
+        <p class="mt-6 text-base text-zinc-100 sm:text-base">
+            I’m Jan Friebe, a professional software developer based in Germany
+            NRW. At the moment I worked for the company
+            <a href="http://delos.biz" rel="noopener noreferrer" target="_blank"
+                >ODAS IT
+            </a>, where we develop an web application that support farmers with
+            their daily work. In our application we use the PHP framework
+            symfony as well a lot of Vue and vanilla JavaScript/Typescript.
+        </p>
+
+        <ContactIcons />
+    </div>
+</div>
