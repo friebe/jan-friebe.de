@@ -3,16 +3,16 @@ const { showLogo, absolute } = Astro.props;
 ---
 
 <header class={absolute ? `h-16 absolute top-0 right-0 left-0` : ""}>
-    <div class="mx-auto pt-6 pb-5 max-w-2xl w-full px-10">
+    <div class="mx-auto pt-6 pb-5 max-w-2xl w-full px-8">
         <div class="flex flex-1">
             <div class="flex flex-1">
                 <div class={showLogo ? `hidden` : ""}>
-                    <div class="h-10 w-10 rounded-full bg-white/40 p-0.5">
+                    <div class="h-8 w-8 rounded-full bg-white/40 p-0.5">
                         <a href="/"
                             ><img
                                 alt="Jan Friebe"
                                 src="/assets/img/avatar.png"
-                                class="rounded-full bg-zinc-800 object-cover h-9 w-9"
+                                class="rounded-full bg-zinc-800 object-cover h-7 w-7"
                             /></a
                         >
                     </div>
