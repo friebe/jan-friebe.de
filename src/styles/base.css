@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .link {
+        @apply underline-offset-2 border-b-2 border-gray-400 border-dotted;
+    }
+}
+
+.markdown p {
+    margin: revert;
+}
+
+.markdown h1,
+h2,
+h3,
+h4 {
+    font-size: revert;
+    font-weight: revert;
+}
+
+.markdown a {
+    @apply link;
+}
