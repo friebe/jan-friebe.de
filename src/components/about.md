@@ -2,8 +2,6 @@
 title: 'About me'
 ---
 
-# About me
-
 I was born 1992 in Gelsenkirchen and has been working in the digital media since 2009.  
 
 Ambitious, willing to learn and passionate developer with fun and interest in new technologies. I feel most comfortable in frontend dev as well as in the design of web and print media.
@@ -25,4 +23,4 @@ I like to look at successful and beautiful web projects and test them out. Code 
 
 --
 
-Are you interested in further information about me and my work look at my [resume](https://resume.jan-friebe.de) page and feel free to contact me.
+Are you interested in further information about me and my work hava a look at my [resume](https://resume.jan-friebe.de) page and feel free to contact me.

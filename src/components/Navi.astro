@@ -3,7 +3,7 @@ const { showLogo, absolute } = Astro.props;
 ---
 
 <header class={absolute ? `h-16 absolute top-0 right-0 left-0` : ""}>
-    <div class="mx-auto pt-8 pb-8 max-w-2xl w-full px-8 sm:pb-16">
+    <div class="pt-8 pb-8 w-full sm:pb-16 standard-margin">
         <div class="flex flex-1">
             <div class="flex flex-1">
                 <div class={showLogo ? `hidden` : ""}>
@@ -20,7 +20,9 @@ const { showLogo, absolute } = Astro.props;
             </div>
             <div class="flex justify-end">
                 <nav class="md:block">
-                    <ul class="flex px-3 text-sm font-medium text-white">
+                    <ul
+                        class="list-none flex px-3 text-sm font-medium text-white"
+                    >
                         <li>
                             <a
                                 class="relative block px-3 py-2 transition hover:text-yellow-500"
@@ -31,7 +33,7 @@ const { showLogo, absolute } = Astro.props;
                         <li>
                             <a
                                 class="relative block px-3 py-2 transition hover:text-yellow-500"
-                                href="/articles">Notes</a
+                                href="/notes">Notes</a
                             >
                         </li>
 

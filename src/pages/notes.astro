@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navi from "../components/Navi.astro";
+import Footer from "../components/Footer.astro";
+import BlogPost from "../components/BlogPost.astro";
+const allPosts = await Astro.glob("../pages/notes/*.md");
+const pageTitle = "Notes";
+---
+
+<Layout title={pageTitle}>
+    <Navi />
+    <main class="mx-auto flex-grow max-w-2xl px-8 w-full">
+        <ul>
+            {
+                allPosts.map((post) => (
+                    <BlogPost
+                        url={post.url}
+                        pubDate={post.frontmatter.pubDate}
+                        title={post.frontmatter.title}
+                    />
+                ))
+            }
+        </ul>
+    </main>
+    <Footer />
+</Layout>

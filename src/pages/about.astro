@@ -3,19 +3,19 @@ import Footer from "../components/Footer.astro";
 import Navi from "../components/Navi.astro";
 import Layout from "../layouts/Layout.astro";
 import * as about from "../components/about.md";
-import ContactIcons from "../components/ContactIcons.astro";
 const obj = Object.assign({}, about);
 const { Content } = obj;
 ---
 
 <Layout title="About">
     <Navi />
-    <main class="markdown mx-auto flex-grow max-w-2xl px-8">
-        <!-- <h1
-            class="font-bold text-3xl md:text-5xl tracking-tight mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600"
+
+    <main class="prose-custom">
+        <h1
+            class="font-bold text-3xl md:text-5xl tracking-tight mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600 prose prose-a:text-zinc-600"
         >
-            {about.frontmatter.title}
-        </h1> -->
+            # About
+        </h1>
         <Content />
     </main>
 
