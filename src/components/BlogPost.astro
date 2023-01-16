@@ -1,16 +1,10 @@
 ---
-const { pubDate, title, url } = Astro.props;
+const { date, title, url } = Astro.props;
 ---
-
-<h1
-    class="font-bold text-3xl md:text-5xl tracking-tight mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600"
->
-    # Notes
-</h1>
 
 <li class="list-none">
     <a class="text-bold text-zinc-400 hover:text-zinc-100" href={url}
         >{title}
-        <p class="text-sm">{pubDate.slice(0, 10)}</p>
+        <p>{date.slice(0, 10)}</p>
     </a>
 </li>
