@@ -16,17 +16,15 @@ const pageTitle = "Notes";
             # Notes
         </h1>
 
-        <ul class="p-0">
-            {
-                allPosts.map((post) => (
-                    <ListBlogPost
-                        url={post.url}
-                        date={post.frontmatter.date}
-                        title={post.frontmatter.title}
-                    />
-                ))
-            }
-        </ul>
+        {
+            allPosts.map((post) => (
+                <ListBlogPost
+                    url={post.url}
+                    date={post.frontmatter.date}
+                    title={post.frontmatter.title}
+                />
+            ))
+        }
     </main>
     <Footer />
 </Layout>

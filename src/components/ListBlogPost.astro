@@ -2,9 +2,13 @@
 const { date, title, url } = Astro.props;
 ---
 
-<li class="list-none">
-    <a class="text-bold text-zinc-400 hover:text-zinc-100" href={url}
-        >{title}
-        <p>{date.slice(0, 10)}</p>
-    </a>
-</li>
+<ul class="p-0 m-0 border-gray-700">
+    <li class="list-none p-3 hover:bg-zinc-900">
+        <a href={url}>
+            <div class="flex-1 min-w-0">
+                {title}
+                <p class="m-0 text-zinc-500">{date.slice(0, 10)}</p>
+            </div>
+        </a>
+    </li>
+</ul>
