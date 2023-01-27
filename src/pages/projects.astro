@@ -1,18 +1,38 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import Navi from "../components/Navi.astro";
 import Footer from "../components/Footer.astro";
-import Layout from "../layouts/Layout.astro";
+import ListProjects from "../components/ListProjects.astro";
+import * as Projects from "../components/projects.md";
+
+interface Projects {
+    name: string;
+    repoLink: string;
+    desc: string;
+    tags: Array<string>;
+    link: string;
+}
 ---
 
-<Layout title="Projects I am proud of">
+<Layout title={Projects.frontmatter.title}>
     <Navi />
-    <main class="flex-grow">
+    <main class="flex-grow w-full">
         <h1
             class="font-bold text-3xl md:text-5xl tracking-tight mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600"
         >
-            # Projects
+            # {Projects.frontmatter.headline}
         </h1>
-        <p>Under construction</p>
+
+        {
+            Projects.frontmatter.projects.map((project: Projects) => (
+                <ListProjects
+                    repoLink={project.repoLink}
+                    name={project.name}
+                    desc={project.desc}
+                    tags={project.tags}
+                />
+            ))
+        }
     </main>
-    <Footer />
 </Layout>
+<Footer />

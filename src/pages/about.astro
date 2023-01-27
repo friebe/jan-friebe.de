@@ -2,19 +2,19 @@
 import Footer from "../components/Footer.astro";
 import Navi from "../components/Navi.astro";
 import Layout from "../layouts/Layout.astro";
-import * as about from "../components/about.md";
-const obj = Object.assign({}, about);
+import * as About from "../components/about.md";
+const obj = Object.assign({}, About);
 const { Content } = obj;
 ---
 
-<Layout title="About">
+<Layout title={About.frontmatter.title}>
     <Navi />
 
     <main class="prose-custom">
         <h1
-            class="font-bold text-3xl md:text-5xl tracking-tight mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600 prose prose-a:text-zinc-600"
+            class="font-bold text-3xl md:text-5xl tracking-tight mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600"
         >
-            # About
+            # {About.frontmatter.headline}
         </h1>
         <Content />
     </main>

@@ -1,5 +1,6 @@
 ---
-title: 'About me'
+title: About - Jan Friebe
+headline: About
 ---
 
 I was born 1992 in Gelsenkirchen and has been working in the digital media since 2009.  

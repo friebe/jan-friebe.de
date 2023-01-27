@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Navi from "../components/Navi.astro";
 import Footer from "../components/Footer.astro";
-import BlogPost from "../components/BlogPost.astro";
+import ListBlogPost from "../components/ListBlogPost.astro";
 const allPosts = await Astro.glob("../pages/notes/*.md");
 const pageTitle = "Notes";
 ---
@@ -19,7 +19,7 @@ const pageTitle = "Notes";
         <ul class="p-0">
             {
                 allPosts.map((post) => (
-                    <BlogPost
+                    <ListBlogPost
                         url={post.url}
                         date={post.frontmatter.date}
                         title={post.frontmatter.title}

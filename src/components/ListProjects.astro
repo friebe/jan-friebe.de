@@ -1,0 +1,25 @@
+---
+const { name, desc, repoLink, tags } = Astro.props;
+---
+
+<ul class="p-0 border-gray-700">
+    <li class="list-none p-3 hover:bg-zinc-900">
+        <a href={repoLink}>
+            <div class="flex-1 min-w-0">
+                {name}
+                <p class="text-zinc-500">{desc}</p>
+            </div>
+            <div
+                class="space-x-3 inline-flex items-center text-xs font-semibold"
+            >
+                {
+                    tags.map((tag: string) => (
+                        <span class="text-xs inline-flex items-center uppercase px-2 py-1 bg-zinc-300 text-zinc-700 rounded-full">
+                            {tag}
+                        </span>
+                    ))
+                }
+            </div>
+        </a>
+    </li>
+</ul>
