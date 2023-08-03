@@ -3,46 +3,46 @@ import ContactIcons from "./ContactIcons.astro";
 ---
 
 <div class="standard-margin flex flex-grow justify-center flex-col">
-    <!-- avatar -->
-    <a
-        class="flex-start block h-40 w-40 origin-left"
-        href="/assets/img/avatar.png"
+  <!-- avatar -->
+  <a
+    class="flex-start block h-40 w-40 origin-left"
+    href="/assets/img/avatar.svg"
+  >
+    <img
+      alt="Jan Friebe"
+      src="/assets/img/icon-avatar.svg"
+      width="512"
+      height="512"
+      class="rounded-full object-cover h-40 w-40"
+    />
+  </a>
+
+  <!-- headline -->
+  <div class="max-w-2xl">
+    <h1
+      class="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600 font-bold md:text-5xl"
     >
-        <img
-            alt="Jan Friebe"
-            src="/assets/img/icon-avatar.svg"
-            width="512"
-            height="512"
-            class="rounded-full object-cover h-40 w-40"
-        />
-    </a>
+      Software developer, hobby boxer and drawer.
+    </h1>
+    <p class="mt-6">
+      I’m Jan Friebe, a professional software developer based in Germany NRW. At
+      the moment I worked for the company
+      <a
+        href="http://odas.biz"
+        class="link"
+        rel="noopener noreferrer"
+        target="_blank"
+        >ODAS IT
+      </a>, where we develop an <a
+        href="http://delos.biz"
+        class="link"
+        rel="noopener noreferrer"
+        target="_blank"
+        >web application
+      </a> that support farmers with their daily work. In our application we use
+      the PHP framework symfony as well a lot of Vue and vanilla JavaScript/Typescript.
+    </p>
 
-    <!-- headline -->
-    <div class="max-w-2xl">
-        <h1
-            class="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-600 font-bold md:text-5xl"
-        >
-            Software developer, hobby boxer and drawer.
-        </h1>
-        <p class="mt-6">
-            I’m Jan Friebe, a professional software developer based in Germany
-            NRW. At the moment I worked for the company
-            <a
-                href="http://odas.biz"
-                class="link"
-                rel="noopener noreferrer"
-                target="_blank"
-                >ODAS IT
-            </a>, where we develop an <a
-                href="http://delos.biz"
-                class="link"
-                rel="noopener noreferrer"
-                target="_blank"
-                >web application
-            </a> that support farmers with their daily work. In our application we
-            use the PHP framework symfony as well a lot of Vue and vanilla JavaScript/Typescript.
-        </p>
-
-        <ContactIcons />
-    </div>
+    <ContactIcons />
+  </div>
 </div>
