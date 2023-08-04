@@ -8,7 +8,7 @@
     }
 
     .standard-margin {
-        @apply mx-auto max-w-2xl px-8;
+        @apply mx-auto max-w-4xl px-8;
     }
 
 }
@@ -122,6 +122,6 @@
     }
 
     .prose-custom {
-        @apply text-zinc-100 prose prose-headings:text-zinc-100 prose-a:text-orange-500;
+        @apply text-zinc-100 prose prose-headings: text-zinc-100 prose-a:text-orange-500;
     }
 }
