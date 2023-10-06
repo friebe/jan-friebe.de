@@ -122,6 +122,6 @@
     }
 
     .prose-custom {
-        @apply text-zinc-100 prose prose-headings: text-zinc-100 prose-a:text-orange-500;
+        @apply text-zinc-100;
     }
 }
