@@ -3,6 +3,8 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 import tailwind from "@astrojs/tailwind";
 
+import icon from 'astro-icon'
+
 // https://astro.build/config
 import mdx from "@astrojs/mdx";
 
@@ -12,5 +14,8 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), mdx()]
+  }),
+  mdx(),
+  icon({ include: { ri: ['*'] } })
+  ]
 });
