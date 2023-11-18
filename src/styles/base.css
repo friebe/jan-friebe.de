@@ -124,4 +124,12 @@
     .prose-custom {
         @apply text-zinc-100;
     }
+
+    .square-bg {
+        background-image:
+            linear-gradient(90deg, rgba(17, 17, 17), rgba(17, 17, 17, .90)), url(),
+            linear-gradient(#eee 1px, transparent 0),
+            linear-gradient(90deg, #eee 1px, rgb(17, 17, 17) 0);
+        background-size: auto, auto, 20px 20px, 20px 20px;
+    }
 }
