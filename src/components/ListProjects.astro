@@ -1,6 +1,6 @@
 ---
 const { name, desc, repoLink, tags } = Astro.props;
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 ---
 
 <ul class="p-0 m-1 border-gray-700">
@@ -10,10 +10,10 @@ import { Icon } from "astro-icon";
                 {name}
                 <div class="">
                     <span class="flex-end mr-1 inline-block w-4">
-                        <Icon pack="ri" class="" name="arrow-right-up-line" />
+                        <Icon size={18} name="ri:arrow-right-up-line" />
                     </span>
                     <span class="inline-block w-4">
-                        <Icon pack="ri" class="" name="github-fill" />
+                        <Icon size={18} name="ri:github-fill" />
                     </span>
                 </div>
             </div>
