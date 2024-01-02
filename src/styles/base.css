@@ -125,6 +125,10 @@
         @apply text-zinc-100;
     }
 
+    .prose-about a {
+        @apply link;
+    }
+
     .square-bg {
         background-image:
             linear-gradient(90deg, rgba(17, 17, 17), rgba(17, 17, 17, .90)), url(),
